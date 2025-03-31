@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Amogha Mahadev</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #0A0F1E;
+            color: #E0E0E0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(15, 23, 42, 0.9);
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0 25px;
+        }
+        
+        nav ul li a {
+            color: #1E90FF;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #FF6B6B;
+            text-shadow: 0 0 8px rgba(255, 107, 107, 0.6);
+        }
+        
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        .intro-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            color: #FF6B6B;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #1E90FF;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .intro-text {
+            color: #D8BFD8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .btn {
+            background-color: rgba(30, 144, 255, 0.2);
+            color: #1E90FF;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #1E90FF;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background-color: #1E90FF;
+            color: #0A0F1E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
+        }
+        
+        h2 {
+            color: #1E90FF;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(30, 144, 255, 0.3);
+        }
+        
+        .project-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .project {
+            background-color: rgba(15, 23, 42, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #1E90FF;
+            transition: all 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        h3 {
+            color: #FF6B6B;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .project p {
+            color: #D8BFD8;
+            margin-bottom: 0;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        ul li {
+            background-color: rgba(15, 23, 42, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            color: #D8BFD8;
+            text-align: center;
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            color: #D8BFD8;
+        }
+        
+        .purple-link {
+            color: #D8BFD8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .purple-link:hover {
+            color: #FF6B6B;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="intro-container">
+            <h1>Amogha Mahadev</h1>
+            <p class="subtitle">Jr Software Developer | Data Engineer</p>
+            <p class="intro-text">
+                Jr Data Engineer/Software Developer with 1.8 years of experience in data warehousing, ETL processes, and data extraction from Rave and AWS. Skilled in SQL, AWS, Power BI, and Python, with a proven track record in designing efficient dashboards and optimized data models. Passionate about leveraging data to drive business decisions and continuously expanding technical expertise through certifications.
+            </p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Sales Data Dashboard</h3>
+                <p>Designed a Power BI dashboard to visualize sales data, improving decision-making speed.</p>
+            </div>
+            <div class="project">
+                <h3>Tumour Analysis using Python</h3>
+                <p>Implemented an algorithm with machine learning to predict tumour malignancy with 97% accuracy.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>SQL (MySQL)</li>
+            <li>Python (Pandas, NumPy)</li>
+            <li>Power BI, Qlik Sense</li>
+            <li>AWS (S3, Redshift)</li>
+            <li>Excel (Pivot Tables, VLOOKUP)</li>
+        </ul>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        <div style="text-align: center;">
+            <a href="https://drive.google.com/file/d/1ngDW0x5XQLLifsTGLqzJynSEqYJb3M-f/view?usp=sharing" class="btn" target="_blank">View My Resume</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: amoghpm08@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/amogha-mahadev/" class="purple-link" target="_blank">Amogha Mahadev</a></p>
+        </div>
+    </section>
+</body>
+</html>
